@@ -18,14 +18,12 @@ main {
     width: 320px;
     border-radius: 16px;
     padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
     gap: 10px;
+    color: white; /* Asegura que todo el texto dentro del main sea blanco */
 }
 
 .cabeza h3 {
-    color: rgb(255, 255, 255);
     font-size: 32px;
 }
 
@@ -34,14 +32,23 @@ main {
     font-size: 18px;
 }
 
-.icono {
-    background-color: #463d39;
-    padding: 15px;
-    border-radius: 50%;
+.Arriba{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .icono img {
     width: 24px;
+    border-radius: 50%;
+    float:right;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left; /* Asegura que el texto quede alineado correctamente */
 }
 
 .descripcion .porcentaje {
@@ -57,7 +64,6 @@ main {
 }
 
 .porcentaje::before {
-    content: "↑";
+    
     margin-right: 4px;
 }
-
